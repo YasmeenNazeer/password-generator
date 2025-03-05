@@ -1,30 +1,3 @@
-"""import streamlit as st
-import random
-import string
-
-def password_generator(length,use_digits,use_special):
-    characters= string.ascii_letters  # upeer or lower case provide krta ha all letters 
-
-    if use_digits:
-        characters +=string.digits  #  provides 1_9
-    if use_special:
-        characters +=string.punctuation  # special charcters (/ @ # $ % ^ & * ? )
-    return ''.join(random.choice(characters) for _ in range(length))
-
-st.title("Password generator")
-length = st.slider("**Select you're Password's length**" , min_value=4,max_value=32,value=12)
-use_digits=  st.checkbox("Include Digits")
-use_special= st.checkbox("Include special Characters")
-if st.button("Generator Password"):
-    password = password_generator(length,use_digits,use_special)
-    st.write(f"Generated Password: {password}")
- 
-
-
-st.markdown("---")
-st.markdown("_Made with ❤️ by Yasmeen Nazeer_")
-
-"""
 
 import streamlit as st
 import random
